@@ -1,0 +1,16 @@
+<h1>Restaurants</h1>
+
+
+<% @restaurants.each do |restaurant| %>
+<div class="card-restaurant">
+  <%= restaurant.name %> - <%= restaurant.category %> <i class="fab fa-facebook"></i>
+  <br>
+  <div class="info">
+    <%= restaurant.address %>
+    <%= restaurant.phone_number %>
+  </div>
+  <div class="link">
+    <%= link_to "View this restaurant", restaurant_path(restaurant) %>
+  </div>
+</div>
+<% end %>

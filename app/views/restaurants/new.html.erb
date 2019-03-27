@@ -1,0 +1,16 @@
+
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.label :name %>
+  <%= f.input_field :name %>
+
+  <%= f.label :address %>
+  <%= f.input_field :address %>
+
+  <%= f.label :phone_number %>
+  <%= f.input_field :phone_number %>
+
+  <%= f.label :category %>
+  <%= f.input_field :category %>
+
+  <%= f.submit 'Save', class: "form_restaurant" %>
+<% end %>

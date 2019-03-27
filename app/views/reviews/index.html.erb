@@ -1,0 +1,11 @@
+<h1>Restaurants#reviews</h1>
+
+<%= simple_form_for @user do |f| %>
+  <%= f.label :username %>
+  <%= f.input_field :username %>
+  <%= f.hint 'No special characters, please!' %>
+  <%= f.error :username, id: 'user_name_error' %>
+  <%= f.full_error :token %>
+  <%= f.submit 'Save' %>
+<% end %>
+

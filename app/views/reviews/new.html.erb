@@ -1,0 +1,10 @@
+
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.label :content %>
+  <%= f.input_field :content %>
+
+  <%= f.label :rating %>
+  <%= f.input_field :rating, as: :radio_buttons,collection: [0,1,2,3,4,5] %>
+
+  <%= f.submit 'Save', class: "form_reviews" %>
+<% end %>
